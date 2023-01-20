@@ -1,0 +1,9 @@
+<div class="center">
+    <h1 class="text-center">Update Budget</h1>
+    <div class="row">
+        <app-datepicker (onSelectYear)="onSelectYear($event)" (onSelectMonth)="onSelectMonth($event)"></app-datepicker>
+    </div>
+    <div class="row mt-3">
+        <app-filedropzone (onFileContentChange)="onBudgetUpdate($event)"></app-filedropzone>
+    </div>
+</div>

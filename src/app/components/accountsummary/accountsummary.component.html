@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="text-center mt-3 font-weight-bold"> Account Summary View</h1>
+
+    <h1 class="text-center mt-3 font-weight-bold"> Date : 2022.20.1</h1>
+   
+    <div class="row">
+        <div class="col-sm-6 mt-3" *ngFor="let account of allAccounts">
+            <mat-card class="card-container">
+                <mat-card-header >
+                  <mat-card-title class="text-center">Departmnet : {{account.departmentCode}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content class="mt-5">
+                    <h2>Current Balance : Rs {{account.balance}} /=</h2>
+                </mat-card-content>
+                
+              </mat-card>
+        </div>
+    </div>
+    <div class="row mt-5 d-flex justify-content-center">
+        
+            <button class="naviagteToAdminPanel " routerLink="/admin" >Admin pannel</button>
+       
+    </div>
+</div>
